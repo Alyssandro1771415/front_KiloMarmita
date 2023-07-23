@@ -1,0 +1,38 @@
+.header {
+
+  display: flex;
+  background: linear-gradient(rgb(243, 168, 28, 0.8), rgb(231, 44, 44, 0.8));
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.logoType {
+  display: flex;
+}
+
+.header ul {
+
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  list-style: none;
+
+}
+
+@keyframes links {
+  
+  from{
+    transform: translateX(-3000px);
+  }
+  to{
+      transform: translateX(0px);
+  }
+
+}
+
+.header:only-child{
+  
+  animation: links 0.3s;
+
+}

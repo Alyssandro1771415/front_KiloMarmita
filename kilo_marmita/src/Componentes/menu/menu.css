@@ -1,0 +1,16 @@
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.menu li{
+    padding: 10px;
+}
+
+li{
+  color: white;
+}
+
+a:hover{
+  cursor: pointer;
+}
