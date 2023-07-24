@@ -14,7 +14,8 @@ function Menu(props) {
     return (
         <ul className="menu mt-4">
             {listLinks}
-            <li><BasicModal></BasicModal></li>
+            <li><BasicModal opt="logIn"></BasicModal></li>
+            <li><BasicModal opt="signIn"></BasicModal></li>
         </ul>
     );
 
