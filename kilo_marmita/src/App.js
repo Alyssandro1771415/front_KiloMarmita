@@ -9,7 +9,7 @@ function App() {
 
       <Header links={[["", "Inicio"], ["", "Serviços"], ["", "Produtos"], ["", "Cardápio"], ["", "Faça Seu Pedido"]]}></Header>
       
-      <div className='container mt-5 mb-5 d-flex'>
+      <div className='container mt-5 mb-5 d-flex justify-content-start'>
 
         <Test></Test>
 

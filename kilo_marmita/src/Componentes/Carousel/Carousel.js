@@ -53,7 +53,7 @@ export default class Test extends React.Component {
         chevronWidth={24}
         rightChevron={'>'}
         leftChevron={'<'}
-        outsideChevron={true}
+        outsideChevron={false}
       >
         {children}
       </ItemsCarousel>
