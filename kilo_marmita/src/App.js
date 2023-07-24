@@ -9,11 +9,13 @@ function App() {
 
       <Header links={[["", "Inicio"], ["", "Serviços"], ["", "Produtos"], ["", "Cardápio"], ["", "Faça Seu Pedido"]]}></Header>
       
-      <br></br>
+      <div className='container mt-5 mb-5 d-flex'>
 
-      <Test></Test>
+        <Test></Test>
 
-      <br></br>
+        
+
+      </div>
 
     </div>
 

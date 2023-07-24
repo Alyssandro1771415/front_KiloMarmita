@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
 import range from 'lodash/range';
+import "./Carousel.css"
 
 import feijoada from "../images/feijoada.png"
 import kilomarmita from "../images/kilomarmita.png"
@@ -33,8 +34,7 @@ export default class Test extends React.Component {
     return (
       <ItemsCarousel
         // Placeholder configurations
-        enablePlaceholder
-        numberOfPlaceholderItems={5}
+        numberOfPlaceholderItems={3}
         minimumPlaceholderTime={1000}
         placeholderItem={<div style={{ height: 200, background: '#900'}}>Placeholder</div>}
 
@@ -53,7 +53,7 @@ export default class Test extends React.Component {
         chevronWidth={24}
         rightChevron={'>'}
         leftChevron={'<'}
-        outsideChevron={false}
+        outsideChevron={true}
       >
         {children}
       </ItemsCarousel>
@@ -62,14 +62,14 @@ export default class Test extends React.Component {
 } 
 
 const createChildren = () => [
-    <div key="feijoada" style={{ height: 450, width: 800}}>
-      <img src={feijoada} alt="Feijoada" style={{ width: '90%', height: '100%' }} />
+    <div className='container d-flex justify-content-center' key="feijoada" style={{ height: 400, width: 600}}>
+      <img src={feijoada} alt="Feijoada" style={{ width: '85%', height: '100%' }} />
     </div>,
-    <div key="kilomarmita" style={{ height: 450, width: 800 }}>
-      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '90%', height: '100%' }} />
+    <div className='container d-flex justify-content-center' key="kilomarmita" style={{ height: 400, width: 600 }}>
+      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '85%', height: '100%' }} />
     </div>,
-    <div key="lasanha" style={{ height: 450, width: 800 }}>
-      <img src={lasanha} alt="Lasanha" style={{ width: '90%', height: '100%' }} />
+    <div className='container d-flex justify-content-center' key="lasanha" style={{ height: 400, width: 600 }}>
+      <img src={lasanha} alt="Lasanha" style={{ width: '85%', height: '100%' }} />
     </div>
   ];
   
