@@ -4,6 +4,10 @@ a{
 }
 
 .menu li{
+  align-self:flex-end;
+}
+
+.menu li{
     padding: 10px;
 }
 
