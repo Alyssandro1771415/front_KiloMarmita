@@ -1,9 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { FormControl, colors } from '@mui/material';
+import { FormControl} from '@mui/material';
 import { FormLabel } from '@mui/material';
 import { Input } from '@mui/material';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,7 +30,7 @@ export default function BasicModal(props) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  if (props.opt == "logIn") {
+  if (props.opt === "logIn") {
 
     return (
       <div>
@@ -71,7 +70,7 @@ export default function BasicModal(props) {
     );
   }
 
-  else if (props.opt == "signIn") {
+  else if (props.opt === "signIn") {
     return (
       <div>
         <Button variant="text" sx={styleButton} onClick={handleOpen}>Sign In</Button>

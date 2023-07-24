@@ -14,3 +14,7 @@ li{
 a:hover{
   cursor: pointer;
 }
+
+li:hover{
+  transform: translateY(-3px);
+}
