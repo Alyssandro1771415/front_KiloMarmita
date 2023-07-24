@@ -63,13 +63,13 @@ export default class Test extends React.Component {
 
 const createChildren = () => [
     <div key="feijoada" style={{ height: 450, width: 800}}>
-      <img src={feijoada} alt="Feijoada" style={{ width: '100%', height: '100%' }} />
+      <img src={feijoada} alt="Feijoada" style={{ width: '90%', height: '100%' }} />
     </div>,
     <div key="kilomarmita" style={{ height: 450, width: 800 }}>
-      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '100%', height: '100%' }} />
+      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '90%', height: '100%' }} />
     </div>,
     <div key="lasanha" style={{ height: 450, width: 800 }}>
-      <img src={lasanha} alt="Lasanha" style={{ width: '100%', height: '100%' }} />
+      <img src={lasanha} alt="Lasanha" style={{ width: '90%', height: '100%' }} />
     </div>
   ];
   
