@@ -3,18 +3,20 @@ import ItemsCarousel from 'react-items-carousel';
 import range from 'lodash/range';
 
 import feijoada from "../images/feijoada.png"
+import kilomarmita from "../images/kilomarmita.png"
+import lasanha from "../images/lasanha.png"
 
 export default class Test extends React.Component {
 
   componentWillMount() {
     this.setState({
-      children: [feijoada],
-      activeItemIndex: 0,
+      children: [feijoada, kilomarmita, lasanha],
+      activeItemIndex: 1,
     });
 
     setTimeout(() => {
       this.setState({
-        children: createChildren(20),
+        children: createChildren(3),
       })
     }, 100);
   }
@@ -34,7 +36,7 @@ export default class Test extends React.Component {
         enablePlaceholder
         numberOfPlaceholderItems={5}
         minimumPlaceholderTime={1000}
-        placeholderItem={<div style={{ height: 150, background: '#900' }}>Placeholder</div>}
+        placeholderItem={<div style={{ height: 200, background: '#900' }}>Placeholder</div>}
 
         // Carousel configurations
         numberOfCards={1}
@@ -59,4 +61,18 @@ export default class Test extends React.Component {
   }
 } 
 
-const createChildren = n => range(n).map(i => <div key={i} style={{ height: 200, background: '#333' }}>{i}</div>);
+const createChildren = () => [
+    <div key="feijoada" style={{ height: 450, width: 800}}>
+      <img src={feijoada} alt="Feijoada" style={{ width: '100%', height: '100%' }} />
+    </div>,
+    <div key="kilomarmita" style={{ height: 450, width: 800 }}>
+      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '100%', height: '100%' }} />
+    </div>,
+    <div key="lasanha" style={{ height: 450, width: 800 }}>
+      <img src={lasanha} alt="Lasanha" style={{ width: '100%', height: '100%' }} />
+    </div>
+  ];
+  
+  
+  
+  
