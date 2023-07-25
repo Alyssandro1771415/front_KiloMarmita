@@ -1,0 +1,62 @@
+@keyframes alterColor {
+    0% {
+        background: linear-gradient(red, orange);
+    }
+
+    10% {
+        background: linear-gradient(#ff3d00, #ff9e00);
+    }
+
+    20% {
+        background: linear-gradient(#ff7f00, #ffa800);
+    }
+
+    30% {
+        background: linear-gradient(#ffa800, #ff7f00);
+    }
+
+    40% {
+        background: linear-gradient(#ff9e00, #ff3d00);
+    }
+
+    50% {
+        background: linear-gradient(orange, red);
+    }
+
+    60% {
+        background: linear-gradient(#ff9e00, #ff3d00);
+    }
+
+    70% {
+        background: linear-gradient(#ffa800, #ff7f00);
+    }
+
+    80% {
+        background: linear-gradient(#ff7f00, #ffa800);
+    }
+
+    90% {
+        background: linear-gradient(#ff3d00, #ff9e00);
+    }
+
+    100% {
+        background: linear-gradient(red, orange);
+    }
+}
+
+
+.container {
+    text-align: center;
+}
+
+.v-row {
+    padding: 2px;
+    margin-right: 5px;
+    height: 450px;
+    animation: alterColor 10s infinite;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 225%;
+}

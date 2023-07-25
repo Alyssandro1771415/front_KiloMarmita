@@ -1,5 +1,5 @@
 *{
-    margin: auto;
+    margin: 0%;
     padding: 0%;
 }
 
@@ -11,4 +11,5 @@ img{
     width: 70%;
     margin-left: 0%;
     padding: 0%;
+    right: 8%;
 }
