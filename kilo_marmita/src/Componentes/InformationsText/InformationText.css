@@ -49,14 +49,25 @@
     text-align: center;
 }
 
+.infos-container{
+    position: relative;
+    right: 10%;
+}
+
 .v-row {
     padding: 2px;
     margin-right: 5px;
     height: 450px;
     animation: alterColor 10s infinite;
     border-radius: 25px;
+    position: relative;
+    right: 20%;
 }
 
 h1 {
     font-size: 225%;
+}
+
+p{
+    font-size: large;
 }

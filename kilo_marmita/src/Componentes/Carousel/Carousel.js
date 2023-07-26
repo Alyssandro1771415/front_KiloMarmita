@@ -36,7 +36,7 @@ export default class Test extends React.Component {
         // Placeholder configurations
         numberOfPlaceholderItems={3}
         minimumPlaceholderTime={1000}
-        placeholderItem={<div style={{ height: 200, background: '#900'}}>Placeholder</div>}
+        placeholderItem={<div style={{ height: 200, background: '#900' }}>Placeholder</div>}
 
         // Carousel configurations
         numberOfCards={1}
@@ -50,29 +50,29 @@ export default class Test extends React.Component {
         activeItemIndex={activeItemIndex}
         activePosition={'center'}
 
-        chevronWidth={24}
+        chevronWidth={250}
         rightChevron={'>'}
         leftChevron={'<'}
         outsideChevron={false}
       >
         {children}
       </ItemsCarousel>
-    );  
+    );
   }
-} 
+}
 
 const createChildren = () => [
-    <div className='container d-flex justify-content-center' key="feijoada" style={{ height: 400, width: 600}}>
-      <img src={feijoada} alt="Feijoada" style={{ width: '85%', height: '100%' }} />
-    </div>,
-    <div className='container d-flex justify-content-center' key="kilomarmita" style={{ height: 400, width: 600 }}>
-      <img src={kilomarmita} alt="Kilomarmita" style={{ width: '85%', height: '100%' }} />
-    </div>,
-    <div className='container d-flex justify-content-center' key="lasanha" style={{ height: 400, width: 600 }}>
-      <img src={lasanha} alt="Lasanha" style={{ width: '85%', height: '100%' }} />
-    </div>
-  ];
-  
-  
-  
-  
+  <div className='container d-flex justify-content-center' key="feijoada" style={{ height: 400, width: 600 }}>
+    <img src={feijoada} alt="Feijoada" style={{ width: '85%', height: '100%' }} />
+  </div>,
+  <div className='container d-flex justify-content-center' key="kilomarmita" style={{ height: 400, width: 600 }}>
+    <img src={kilomarmita} alt="Kilomarmita" style={{ width: '85%', height: '100%' }} />
+  </div>,
+  <div className='container d-flex justify-content-center' key="lasanha" style={{ height: 400, width: 600 }}>
+    <img src={lasanha} alt="Lasanha" style={{ width: '85%', height: '100%' }} />
+  </div>
+];
+
+
+
+

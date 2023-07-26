@@ -9,7 +9,7 @@ function InformationText() {
 
             <div className="v-row"></div>
 
-            <div>
+            <div className="infos-container">
                 <h1>A Melhor Marmita de Campina Grande</h1>
                 <br></br>
                 <p>
