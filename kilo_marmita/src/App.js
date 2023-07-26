@@ -26,7 +26,13 @@ function App() {
       <Localization></Localization>
 
 
-      <Footer name="Kilomarmita" phoneNumber="3321-8786" instagram="https://www.instagram.com/kilomarmitacg/" instagramName="@kilomarmitac"></Footer>
+      <Footer 
+      name="Kilomarmita" 
+      phoneNumber="3321-8786" 
+      instagram="https://www.instagram.com/kilomarmitacg/" 
+      instagramName="@kilomarmitacg" 
+      developers={["Alyssandro", "https://www.linkedin.com/in/alyssandro-ramos-9672331ba/"]}>
+      </Footer>
 
     </div>
 

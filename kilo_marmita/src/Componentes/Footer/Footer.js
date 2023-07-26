@@ -13,7 +13,7 @@ function Footer(props) {
             <h4>Copyright {(new Date()).getFullYear()} {props.name}</h4>
             <h4>Instagram: <a href={props.instagram}>{props.instagramName}</a></h4>
             <h4>Phone Number: +55 83 {props.phoneNumber}</h4>
-            <img src={image}/>
+            <img src={image} />
         </footer>
 
     )
