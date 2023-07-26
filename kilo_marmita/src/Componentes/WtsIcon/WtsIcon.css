@@ -1,5 +1,5 @@
 #whatsapp{
-    border-radius: 50px;
+    border-radius: 70%;
     width: 7vw;
     position: fixed;
     animation: float 5s ease-in-out infinite alternate;
@@ -14,11 +14,11 @@
         box-shadow: 0 0 1em rgb(62, 214, 169);
     }
     50%{
-        transform: translatey(-7px);
+        transform: translatey(-5px);
         box-shadow: 0 0 5em rgb(45, 223, 169);
     }
     100%{
-        transform: translatey(7px);
+        transform: translatey(5px);
         box-shadow: 0 0 1em rgb(0, 243, 170);
     }
 }

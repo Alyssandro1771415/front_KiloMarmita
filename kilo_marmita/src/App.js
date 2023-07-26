@@ -4,6 +4,7 @@ import Test from './Componentes/Carousel/Carousel';
 import InformationText from './Componentes/InformationsText/InformationText';
 import Localization from './Componentes/Localization/Localization';
 import WtsIcon from './Componentes/WtsIcon/WtsIcon';
+import Footer from './Componentes/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       </div>
 
       <Localization></Localization>
+
+
+      <Footer name="Kilomarmita" phoneNumber="3321-8786" instagram="https://www.instagram.com/kilomarmitacg/" instagramName="@kilomarmitac"></Footer>
 
     </div>
 

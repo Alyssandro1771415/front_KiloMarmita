@@ -31,8 +31,8 @@
 
 }
 
-.header:only-child{
+body{
   
-  animation: links 0.3s;
+  animation: links 0.5s;
 
 }
