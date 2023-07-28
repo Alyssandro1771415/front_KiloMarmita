@@ -1,6 +1,5 @@
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
-import range from 'lodash/range';
 import "./Carousel.css"
 
 import feijoada from "../images/feijoada.png"
@@ -8,28 +7,31 @@ import kilomarmita from "../images/kilomarmita.png"
 import lasanha from "../images/lasanha.png"
 
 export default class Test extends React.Component {
-
-  componentWillMount() {
-    this.setState({
-      children: [feijoada, kilomarmita, lasanha],
+  constructor(props) {
+    super(props);
+    this.state = {
+      children: createChildren(),
       activeItemIndex: 1,
-    });
-
-    setTimeout(() => {
-      this.setState({
-        children: createChildren(3),
-      })
-    }, 100);
+    };
   }
 
+  componentDidMount() {
+    this.interval = setInterval(this.changeSlide, 5000); // 30 seconds
+  }
 
-  changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  changeSlide = () => {
+    const { activeItemIndex } = this.state;
+    const numChildren = this.state.children.length;
+    const nextSlideIndex = (activeItemIndex + 1) % numChildren;
+    this.setState({ activeItemIndex: nextSlideIndex });
+  };
 
   render() {
-    const {
-      activeItemIndex,
-      children,
-    } = this.state;
+    const { activeItemIndex, children } = this.state;
 
     return (
       <ItemsCarousel
@@ -72,7 +74,3 @@ const createChildren = () => [
     <img src={lasanha} alt="Lasanha" style={{ width: '85%', height: '100%' }} />
   </div>
 ];
-
-
-
-
