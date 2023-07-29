@@ -54,4 +54,6 @@ a{
 
     background-image: url("../icons/logo.png");
     background-size: auto;
+    border-radius: 10px;
+
 }

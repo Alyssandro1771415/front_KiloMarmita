@@ -20,7 +20,7 @@
 
 }
 
-@keyframes links {
+@keyframes translation {
   
   from{
     transform: translateX(-3000px);
@@ -33,6 +33,6 @@
 
 body{
   
-  animation: links 0.5s;
+  animation: translation 0.5s;
 
 }
