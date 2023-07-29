@@ -62,7 +62,7 @@ export default function BasicModal(props) {
               />
             </FormControl>
 
-            <button className='btn btn-success d-flex mt-3'>Log In</button>
+            <a className='btn btn-primary d-flex mt-3 w-25 d-flex justify-content-center'>Login</a>
 
           </Box>
         </Modal>
@@ -109,7 +109,7 @@ export default function BasicModal(props) {
               />
             </FormControl>
 
-            <button className='btn btn-primary d-flex mt-3'>Sing In</button>
+            <a className='btn btn-primary d-flex mt-3 w-25 d-flex justify-content-center'>Sing In</a>
 
           </Box>
         </Modal>

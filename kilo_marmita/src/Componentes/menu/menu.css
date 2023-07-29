@@ -36,7 +36,7 @@ a:hover{
 
 }
 
-a:hover{
+li a:hover{
 
   animation: hoverHeaderItems 0.3s forwards;
 
