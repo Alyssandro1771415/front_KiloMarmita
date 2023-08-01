@@ -93,7 +93,6 @@ export default function BasicModal(props) {
           aria-describedby="modal-modal-description"
         >
           <Box sx={styleSigin} className="ModalBox">
-
             <h1>Cadastre-se</h1>
             <div className='d-flex'>
               <div>
@@ -131,7 +130,7 @@ export default function BasicModal(props) {
                   </Input>
                 </FormControl>
               </div>
-              
+
               <div className='w-100'>
                 <FormControl>
                   <FormLabel className='mt-4'>Número de Telefone</FormLabel>
@@ -154,7 +153,7 @@ export default function BasicModal(props) {
                   <Input
                     name='nome'
                     type='text'
-                    placeholder='Nome Completo'>
+                    placeholder='Endereço'>
                   </Input>
                 </FormControl>
               </div>
