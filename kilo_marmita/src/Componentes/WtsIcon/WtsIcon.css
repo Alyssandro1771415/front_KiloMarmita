@@ -4,8 +4,8 @@
     position: fixed;
     animation: float 5s ease-in-out infinite alternate;
     z-index: 2;
-    left: 97vh;
-    top: 42vh;
+    left: 85%;
+    top: 85%
 }
 
 @keyframes float{

@@ -1,5 +1,5 @@
 import React from "react";
-import Test from "../Componentes/Carousel/Carousel";
+import Carousel from "../Componentes/Carousel/Carousel";
 import InformationText from "../Componentes/InformationsText/InformationText";
 import Localization from "../Componentes/Localization/Localization";
 
@@ -11,7 +11,7 @@ function HomePage() {
 
             <div className='container mt-4 mb-4 d-flex justify-content-start'>
 
-                <Test></Test>
+                <Carousel></Carousel>
 
                 <InformationText></InformationText>
 

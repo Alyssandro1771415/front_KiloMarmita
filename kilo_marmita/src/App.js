@@ -5,7 +5,7 @@ import Header from "./Componentes/Header/Header"
 import WtsIcon from './Componentes/WtsIcon/WtsIcon';
 import Footer from './Componentes/Footer/Footer';
 import HomePage from './Pages/HomePage';
-import MakeWish from "./Pages/MakeWish"
+import MakeWish from "./Pages/MakeWish";
 
 
 const Home = () => <HomePage></HomePage>;
@@ -18,7 +18,6 @@ function App() {
   return (
     <Router>
       <div>
-        <WtsIcon></WtsIcon>
 
         <Header links={[
           ["/", "Inicio"],
@@ -28,7 +27,7 @@ function App() {
           ["/fazerpedido", "Faça Seu Pedido"]
         ]}></Header>
 
-        <div className='container mt-4 mb-4 d-flex  justify-content-start'>
+        <div className='container mt-4 mb-4 d-flex justify-content-center'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/servicos" element={<Servicos />} />
@@ -37,6 +36,8 @@ function App() {
             <Route path="/fazerpedido" element={<FazerPedido />} />
           </Routes>
         </div>
+
+        <WtsIcon></WtsIcon>
 
         <Footer
           name="Kilomarmita"

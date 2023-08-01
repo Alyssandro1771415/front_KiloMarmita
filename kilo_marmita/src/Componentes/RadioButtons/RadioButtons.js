@@ -17,13 +17,6 @@ export default function RowRadioButtonsGroup(props) {
         <FormControlLabel value= {props.opt[0][0]} control={<Radio />} label={props.opt[0][1]} />
         <FormControlLabel value= {props.opt[1][0]} control={<Radio />} label={props.opt[1][1]} />
         <FormControlLabel value= {props.opt[2][0]} control={<Radio />} label={props.opt[2][1]} />
-        <FormControlLabel
-        className='d-none'
-          value="disabled"
-          disabled
-          control={<Radio />}
-          label="other"
-        />
       </RadioGroup>
     </FormControl>
   );

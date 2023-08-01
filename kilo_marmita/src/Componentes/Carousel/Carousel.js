@@ -6,7 +6,7 @@ import feijoada from "../images/feijoada.png"
 import kilomarmita from "../images/kilomarmita.png"
 import lasanha from "../images/lasanha.png"
 
-export default class Test extends React.Component {
+export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
