@@ -15,7 +15,7 @@ function MakeWish() {
             </div>
 
             <h2>Pratos Principais</h2>
-            <div className="container d-flex flex-wrap justify-content-between mb-5">
+            <div className="container d-flex flex-wrap justify-content-around mb-5">
 
                 {products
                     .filter(product => product.categoria === "pp")
