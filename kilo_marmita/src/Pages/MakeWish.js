@@ -4,7 +4,8 @@ import Cards from "../Componentes/Cards/Cards";
 
 function MakeWish() {
 
-    const products = ["1","2","3","4","5","6","7", "8", "9", "10"]; {/* Aqui corrigiremos para os dados consumidos */}
+    const products = [];
+    {/* Aqui corrigiremos para os dados consumidos */ }
 
     return (
         <div className="d-flex flex-column justify-content-around">
@@ -14,21 +15,63 @@ function MakeWish() {
             </div>
 
             <h2>Pratos Principais</h2>
-            <div className="container d-flex flex-wrap justify-content-between">
+            <div className="container d-flex flex-wrap justify-content-between mb-5">
 
-            {products.map((produto, index) => {
-                return(<Cards key={index} productName={produto}></Cards>)
-            })}
+                {products
+                    .filter(product => product.categoria === "pp")
+                    .map((product, index) => (
+                        <Cards key={index} productName={product.nome}></Cards>
+                    ))}
 
             </div>
 
             <h2>Acompanhamentos</h2>
 
+            <div className="container d-flex flex-wrap justify-content-between mb-5">
+
+                {products
+                    .filter(product => product.categoria === "a")
+                    .map((product, index) => (
+                        <Cards key={index} productName={product.nome} />
+                    ))}
+
+            </div>
+
             <h2>Saladas e Entradas</h2>
+
+            <div className="container d-flex flex-wrap justify-content-between mb-5">
+
+                {products
+                    .filter(product => product.categoria === "se")
+                    .map((product, index) => (
+                        <Cards key={index} productName={product.nome} />
+                    ))}
+
+            </div>
 
             <h2>Bebidas</h2>
 
+            <div className="container d-flex flex-wrap justify-content-between mb-5">
+
+                {products
+                    .filter(product => product.categoria === "b")
+                    .map((product, index) => (
+                        <Cards key={index} productName={product.nome} />
+                    ))}
+
+            </div>
+
             <h2>Sobremesas</h2>
+
+            <div className="container d-flex flex-wrap justify-content-between mb-5">
+
+                {products
+                    .filter(product => product.categoria === "s")
+                    .map((product, index) => (
+                        <Cards key={index} productName={product.nome} />
+                    ))}
+
+            </div>
 
         </div>
     )

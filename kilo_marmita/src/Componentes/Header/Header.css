@@ -1,7 +1,8 @@
 .header {
 
   display: flex;
-  background: linear-gradient(rgba(243, 232, 28, 0.8), rgba(207, 10, 10));
+  transition: 10s;
+  background: linear-gradient(#ff0000, #e1ff00);
   justify-content: space-between;
   padding: 0px;
 
