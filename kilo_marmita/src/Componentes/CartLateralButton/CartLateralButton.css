@@ -1,0 +1,14 @@
+.cart-button{
+    width: 15vw;
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+    top: 15vh;
+    left: 84vw;
+    z-index: 4;
+}
+
+.arrow-down{
+    margin-right: 60%;
+    border-right: 1px solid;
+}

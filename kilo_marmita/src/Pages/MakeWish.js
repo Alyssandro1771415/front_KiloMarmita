@@ -1,6 +1,7 @@
 import React from "react";
 import RowRadioButtonsGroup from "../Componentes/RadioButtons/RadioButtons";
 import Cards from "../Componentes/Cards/Cards";
+import CartLateralButton from "../Componentes/CartLateralButton/CartLateralButton";
 
 function MakeWish() {
 
@@ -10,9 +11,12 @@ function MakeWish() {
     return (
         <div className="d-flex flex-column justify-content-around">
 
+            <CartLateralButton></CartLateralButton>
+
             <div className="d-flex">
                 <RowRadioButtonsGroup opt={[["P", "Pequena"], ["M", "Media"], ["G", "Grande"]]}></RowRadioButtonsGroup>
             </div>
+
 
             <h2>Pratos Principais</h2>
             <div className="container d-flex flex-wrap justify-content-around mb-5">

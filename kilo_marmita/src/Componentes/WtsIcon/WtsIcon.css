@@ -1,6 +1,6 @@
 #whatsapp{
     border-radius: 70%;
-    width: 7vw;
+    width: 6vw;
     position: fixed;
     animation: float 5s ease-in-out infinite alternate;
     z-index: 2;
