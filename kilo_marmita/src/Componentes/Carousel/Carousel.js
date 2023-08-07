@@ -48,7 +48,7 @@ export default class Carousel extends React.Component {
         freeScrolling={false}
 
         // Active item configurations
-        requestToChangeActive={this.changeActiveItem}
+        requestToChangeActive={this.changeSlide}
         activeItemIndex={activeItemIndex}
         activePosition={'center'}
 
