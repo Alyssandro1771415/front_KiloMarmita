@@ -6,9 +6,44 @@
     top: 15vh;
     left: 84vw;
     z-index: 4;
+    border: 1px solid;
+    background: linear-gradient(rgb(185, 178, 178), white);
+    border-radius: 1px;
+}
+
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list-items {
+    animation: fadeSlideDown 1s ease-in-out forwards; 
 }
 
 .arrow-down{
     margin-right: 60%;
     border-right: 1px solid;
+}
+
+.list-items-button{
+    user-select: none;
+    cursor: pointer;
+}
+
+.list-items li{
+    color: black;
+    list-style-type: none;
+    border-bottom: solid black 1px;
+    padding: 5px;
+}
+
+li img{
+    width: 4vw;
+    height: 4vw;
 }
