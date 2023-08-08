@@ -4,14 +4,15 @@ import image from "../images/feijoada.png"
 
 function CartLateralButton() {
 
+    const itemsToCart = [{}, {}, {}]; //Aqui será para onde os items adicionados ao carrinho virão para aparecerem nele
+
     const [lister, setLister] = useState(false);
 
     useEffect(() => {
-        // O estado 'lister' controla a visibilidade da lista
     }, [lister]);
 
     const toggleList = () => {
-        setLister(prevLister => !prevLister); // Inverte o valor do estado 'lister'
+        setLister(prevLister => !prevLister);
     };
 
     return (
