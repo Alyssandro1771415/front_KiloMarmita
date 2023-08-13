@@ -7,9 +7,7 @@ import Footer from './Componentes/Footer/Footer';
 import HomePage from './Pages/HomePage';
 import MakeWish from "./Pages/MakeWish";
 
-
 const Home = () => <HomePage></HomePage>;
-const Servicos = () => <div>Conteúdo da Página de Serviços</div>;
 const Produtos = () => <div>Conteúdo da Página de Produtos</div>;
 const Cardapio = () => <div>Conteúdo da Página de Cardápio</div>;
 const FazerPedido = () => <MakeWish></MakeWish>;
@@ -17,11 +15,10 @@ const FazerPedido = () => <MakeWish></MakeWish>;
 function App() {
   return (
     <Router>
-      <div>
+      <div className='pagesBody'>
 
         <Header links={[
           ["/", "Inicio"],
-          ["/servicos", "Serviços"],
           ["/produtos", "Produtos"],
           ["/cardapio", "Cardápio"],
           ["/fazerpedido", "Faça Seu Pedido"]
@@ -30,7 +27,6 @@ function App() {
         <div className='container mt-4 mb-4 d-flex justify-content-center'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/servicos" element={<Servicos />} />
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/cardapio" element={<Cardapio />} />
             <Route path="/fazerpedido" element={<FazerPedido />} />

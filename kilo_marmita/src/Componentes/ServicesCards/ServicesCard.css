@@ -1,0 +1,24 @@
+@keyframes hoverAnimatio {
+    
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 1em rgb(236, 115, 10);
+    }
+    100%{
+        transform: scale(1.05);
+        box-shadow: 0 0 1em rgb(236, 115, 10);
+    }
+
+}
+
+.service-card{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.service-card:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+    border-radius: 5%;
+    animation: hoverAnimatio 0.5s forwards;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../Componentes/Carousel/Carousel";
 import InformationText from "../Componentes/InformationsText/InformationText";
 import Localization from "../Componentes/Localization/Localization";
+import ServicesSection from "../Componentes/Services/ServicesSection";
 
 function HomePage() {
 
@@ -18,6 +19,8 @@ function HomePage() {
             </div>
 
             <Localization></Localization>
+
+            <ServicesSection></ServicesSection>
 
         </div>
 
