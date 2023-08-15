@@ -6,11 +6,13 @@ import WtsIcon from './Componentes/WtsIcon/WtsIcon';
 import Footer from './Componentes/Footer/Footer';
 import HomePage from './Pages/HomePage';
 import MakeWish from "./Pages/MakeWish";
+import AdminPage from './Pages/AdministerPage';
 
 const Home = () => <HomePage></HomePage>;
 const Produtos = () => <div>Conteúdo da Página de Produtos</div>;
 const Cardapio = () => <div>Conteúdo da Página de Cardápio</div>;
 const FazerPedido = () => <MakeWish></MakeWish>;
+const Administer = () => <AdminPage></AdminPage>
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
           ["/", "Inicio"],
           ["/produtos", "Produtos"],
           ["/cardapio", "Cardápio"],
-          ["/fazerpedido", "Faça Seu Pedido"]
+          ["/fazerpedido", "Faça Seu Pedido"],
+          ["/administer", "Administrador"]
         ]}></Header>
 
         <div className='container mt-4 mb-4 d-flex justify-content-center'>
@@ -30,6 +33,7 @@ function App() {
             <Route path="/produtos" element={<Produtos />} />
             <Route path="/cardapio" element={<Cardapio />} />
             <Route path="/fazerpedido" element={<FazerPedido />} />
+            <Route path="/administer" element={<Administer/>} />
           </Routes>
         </div>
 
