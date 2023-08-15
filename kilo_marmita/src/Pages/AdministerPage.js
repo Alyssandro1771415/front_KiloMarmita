@@ -8,49 +8,73 @@ const AdminPage = () => {
     };
 
     return (
-        <div>
-            <h1>Administrador - Gestão Kilomarmita</h1>
-
-            <div className='d-flex justify-content-between'>
-                <button onClick={() => handleTabChange('products')}>Administração de Produto</button>
-                <button onClick={() => handleTabChange('admins')}>Administradores</button>
-                <button onClick={() => handleTabChange('users')}>Administração de Usuários</button>
-                <button onClick={() => handleTabChange('economics')}>Levantamentos Financeiros</button>
-            </div>
-
-            {selectedTab === 'products' && <ProductCRUD />}
-            {selectedTab === 'admins' && <AdminCRUD />}
-            {selectedTab === 'users' && <UserCRUD />}
-            {selectedTab === 'economics' && <EconomicData />}
+        <div className="container">
+          <h1 className="mt-4">Página de Administração</h1>
+          
+          <div className="btn-group mt-3" role="group">
+            <button
+              type="button"
+              className={`btn btn-${selectedTab === 'products' ? 'primary' : 'secondary'}`}
+              onClick={() => handleTabChange('products')}
+            >
+              Administração de Produtos
+            </button>
+            <button
+              type="button"
+              className={`btn btn-${selectedTab === 'admins' ? 'primary' : 'secondary'}`}
+              onClick={() => handleTabChange('admins')}
+            >
+              Administradores
+            </button>
+            <button
+              type="button"
+              className={`btn btn-${selectedTab === 'users' ? 'primary' : 'secondary'}`}
+              onClick={() => handleTabChange('users')}
+            >
+              Administração de Usuários
+            </button>
+            <button
+              type="button"
+              className={`btn btn-${selectedTab === 'economics' ? 'primary' : 'secondary'}`}
+              onClick={() => handleTabChange('economics')}
+            >
+              Levantamentos Financeiros
+            </button>
+          </div>
+    
+          {selectedTab === 'products' && <ProductCRUD />}
+          {selectedTab === 'admins' && <AdminCRUD />}
+          {selectedTab === 'users' && <UserCRUD />}
+          {selectedTab === 'economics' && <EconomicData />}
         </div>
-    );
+      );
 };
 
 const ProductCRUD = () => {
 
     return (
-        <div>Administração de Produtos</div>
+        <h3 className='text-success'>Administração de Produtos</h3>
     )
 };
 
 const AdminCRUD = () => {
 
     return (
-        <div>Administradores</div>
+        <h3 className='text-success'>Administradores</h3>
     )
 };
 
 const UserCRUD = () => {
 
     return (
-        <div>Administração de Usuários</div>
+        <h3 className='text-success'>Administração de Usuários</h3>
     )
 };
 
 const EconomicData = () => {
 
     return (
-        <div>Levantamentos Financeiros</div>
+        <h3 className='text-success'>Levantamentos Financeiros</h3>
     )
 };
 
