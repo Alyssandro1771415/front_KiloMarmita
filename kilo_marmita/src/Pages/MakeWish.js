@@ -5,7 +5,11 @@ import CartLateralButton from "../Componentes/CartLateralButton/CartLateralButto
 
 function MakeWish() {
 
-    const products = [];
+    const products = [{ categoria: "pp", nome: "1" }, { categoria: "pp", nome: "2" }, { categoria: "pp", nome: "3" },
+    { categoria: "pp", nome: "4" }, { categoria: "pp", nome: "5" }, { categoria: "pp", nome: "6" }, { categoria: "pp", nome: "7" },
+    {categoria: "pp", nome:"8"}, { categoria: "a", nome: "1" }, { categoria: "a", nome: "2" }, { categoria: "a", nome: "3" },
+    { categoria: "a", nome: "4" }, { categoria: "e", nome: "5" }, { categoria: "ae", nome: "6" }, { categoria: "ae", nome: "7" },
+    {categoria: "ae", nome:"8"},];
     {/* Aqui corrigiremos para os dados consumidos */ }
 
     return (
