@@ -75,7 +75,7 @@ const ProductCRUD = () => {
                         <input type="text" className="form-control" id="category" name="category" required />
                     </div>
 
-                    <button type="submit" className="btn btn-primary">Add Product</button>
+                    <button type="submit" className="btn btn-primary">Cadastrar</button>
                 </form>
             </div>
 
@@ -86,18 +86,15 @@ const ProductCRUD = () => {
                             <th>Image</th>
                             <th>Name</th>
                             <th>Category</th>
+                            <th>Remove</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="caminho/para/imagem1.jpg" alt="Product 1" width="100" /></td>
-                            <td>Product 1</td>
-                            <td>Category A</td>
+
                         </tr>
                         <tr>
-                            <td><img src="caminho/para/imagem2.jpg" alt="Product 2" width="100" /></td>
-                            <td>Product 2</td>
-                            <td>Category B</td>
+
                         </tr>
                     </tbody>
                 </table>
