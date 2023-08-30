@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import image1 from "../Componentes/images/Artboard1.png";
 
 const AdminPage = () => {
     const [selectedTab, setSelectedTab] = useState('products');
@@ -52,53 +53,65 @@ const AdminPage = () => {
 
 const ProductCRUD = () => {
 
+    const products = [{ image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" },
+    { image: image1, Name: "Produto 1", Category: "Acompanhamentos" }];
+
     return (
         <div className='d-flex flex-column'>
 
             <h3 className='text-success mb-5 mt-3'>Administração de Produtos</h3>
             <div className='d-flex flex-row justify-content-around'>
-            <div className='border border-secundary w-25 p-2'>
-                <h2>Cadastrar Novo Produto</h2>
-                <form>
-                    <div className="mb-3">
-                        <label htmlFor="image" className="form-label">Image:</label>
-                        <input type="file" className="form-control" id="image" name="image" accept="image/*" required />
+                <div className='border border-secundary w-25 p-2'>
+                    <h2>Cadastrar Novo Produto</h2>
+                    <form>
+                        <div className="mb-3">
+                            <label htmlFor="image" className="form-label">Image:</label>
+                            <input type="file" className="form-control" id="image" name="image" accept="image/*" required />
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="name" className="form-label">Name:</label>
+                            <input type="text" className="form-control" id="name" name="name" required />
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="category" className="form-label">Category:</label>
+                            <input type="text" className="form-control" id="category" name="category" required />
+                        </div>
+
+                        <button type="submit" className="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+
+                <div className='w-75 h-50 ms-5'>
+                    <div className='table-responsive' style={{ maxHeight: '400px' }}>
+                        <table className="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {products.map((product) => (
+                                    <tr>
+                                        <td className='w-25'><img className='w-25 h-25' src={product.image} /></td>
+                                        <td>{product.Name}</td>
+                                        <td>{product.Category}</td>
+                                        <td><input type='button' value={"Remove"} className='btn btn-danger'></input></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
-
-                    <div className="mb-3">
-                        <label htmlFor="name" className="form-label">Name:</label>
-                        <input type="text" className="form-control" id="name" name="name" required />
-                    </div>
-
-                    <div className="mb-3">
-                        <label htmlFor="category" className="form-label">Category:</label>
-                        <input type="text" className="form-control" id="category" name="category" required />
-                    </div>
-
-                    <button type="submit" className="btn btn-primary">Cadastrar</button>
-                </form>
-            </div>
-
-            <div className='w-50'>
-                <table className="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Category</th>
-                            <th>Remove</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-
-                        </tr>
-                        <tr>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                </div>
             </div>
         </div>
     )
@@ -129,7 +142,6 @@ const EconomicData = () => {
     return (
         <div>
             <h3 className='text-success'>Levantamentos Financeiros</h3>
-
         </div>
     )
 };
