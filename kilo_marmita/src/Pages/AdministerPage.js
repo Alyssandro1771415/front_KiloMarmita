@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import image1 from "../Componentes/images/Artboard1.png";
+import ApexChartLine from '../Componentes/Charts/ChartLine';
+import ApexChartMixed from '../Componentes/Charts/ChartMixed';
 
 const AdminPage = () => {
     const [selectedTab, setSelectedTab] = useState('products');
@@ -142,6 +144,8 @@ const EconomicData = () => {
     return (
         <div>
             <h3 className='text-success'>Levantamentos Financeiros</h3>
+            <ApexChartLine></ApexChartLine>
+            <ApexChartMixed></ApexChartMixed>
         </div>
     )
 };
