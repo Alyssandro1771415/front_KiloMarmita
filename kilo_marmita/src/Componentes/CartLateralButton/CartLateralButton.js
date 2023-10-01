@@ -16,7 +16,7 @@ function CartLateralButton() {
     };
 
     return (
-        <div className="cart-button d-flex flex-column">
+        <div className="btn cart-button d-flex flex-column">
             <div className="list-items-button" onClick={toggleList}>
                 <i className="bi bi-arrow-bar-down arrow-down"></i>
                 <span className="bi bi-cart-check-fill">Cart</span>
@@ -24,6 +24,24 @@ function CartLateralButton() {
             <div className={`list-items ${lister ? "" : "d-none"}`}>
                 <hr />
                 <ul>
+                    <li>
+                        <div className="d-flex justify-content-around">
+                            <img src={image}></img>
+                            <div>
+                                <p>Feijoada</p>
+                                <p1>15.50</p1>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div className="d-flex justify-content-around">
+                            <img src={image}></img>
+                            <div>
+                                <p>Feijoada</p>
+                                <p1>15.50</p1>
+                            </div>
+                        </div>
+                    </li>
                     <li>
                         <div className="d-flex justify-content-around">
                             <img src={image}></img>
