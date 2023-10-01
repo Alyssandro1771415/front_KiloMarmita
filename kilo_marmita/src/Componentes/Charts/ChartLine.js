@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactApexChart from "react-apexcharts";
 
 function ApexChartLine() {
+  const [selectedYear, setSelectedYear] = useState("2023");
+
+  const datas = [
+    { data: [55, 22, 34, 72], mounth: ["Jan", "Feb", "Mar", "Apr"], year: "2023" },
+    { data: [55, 22, 32, 10], mounth: ["Jan", "Feb", "Mar", "Apr"], year: "2022" }
+  ];
+
   const chartData = {
     series: [
       {
-        name: "Desktops",
-        data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+        name: "Vendas",
+        data: datas.find((item) => item.year === selectedYear)?.data || [],
       },
     ],
     options: {
@@ -24,7 +31,7 @@ function ApexChartLine() {
         curve: "straight",
       },
       title: {
-        text: "Quantidade de Vendas Mensair",
+        text: "Quantidade de Vendas Mensais",
         align: "left",
       },
       grid: {
@@ -34,20 +41,37 @@ function ApexChartLine() {
         },
       },
       xaxis: {
-        categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+        categories: datas.find((item) => item.year === selectedYear)?.mounth || [],
       },
     },
   };
 
+  useEffect(() => {
+    // Faça algo quando o ano selecionado mudar
+    // Pode ser útil para buscar dados adicionais ou realizar outras ações
+  }, [selectedYear]);
+
   return (
-    <div id="chart">
-      <ReactApexChart
-        options={chartData.options}
-        series={chartData.series}
-        type="line"
-        height={350}
-        width={800}
-      />
+    <div>
+      <div>
+        <label>Ano:</label>
+        <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+          {datas.map((item) => (
+            <option key={item.year} value={item.year}>
+              {item.year}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div id="chart">
+        <ReactApexChart
+          options={chartData.options}
+          series={chartData.series}
+          type="line"
+          height={350}
+          width={800}
+        />
+      </div>
     </div>
   );
 }

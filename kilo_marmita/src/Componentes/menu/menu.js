@@ -9,7 +9,7 @@ function Menu(props) {
 
     const listLinks = props.links.map((link, index) => 
         
-        <li key={index}><a href={link[0]}>{link[1]}</a></li>
+        <li className="header_li" key={index}><a href={link[0]}>{link[1]}</a></li>
         
     );
 
