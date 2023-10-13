@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./CartLateralButton.css"
-import image from "../images/feijoada.png"
+import image from "../images/marmita.png";
 
-function CartLateralButton() {
 
-    const itemsToCart = [{}, {}, {}]; //Aqui será para onde os items adicionados ao carrinho virão para aparecerem nele
+function CartLateralButton(props) {
+
+    const itemsToCart = [props.itemsToCart]; //Aqui será para onde os items adicionados ao carrinho virão para aparecerem nele
 
     const [lister, setLister] = useState(false);
 
@@ -25,46 +26,36 @@ function CartLateralButton() {
                 <hr />
                 <ul>
                     <li>
-                        <div className="d-flex justify-content-around">
-                            <img src={image}></img>
-                            <div>
-                                <p>Feijoada</p>
-                                <p1>15.50</p1>
+                        <div className="d-flex flex-row">
+                            <div className="packed-lunch d-flex">
+                                <img src={image}></img>
+                                <div>
+                                    <p>Marmita - G</p>
+                                    <p1>15.50</p1>
+                                </div>
+                            </div>
+                            <div className="packed-lunch-content d-none">
+                                <ul>
+                                    <li>Salada de Atum</li>
+                                    <li>Arroz Branco</li>
+                                    <li>Feijoada</li>
+                                </ul>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div className="d-flex justify-content-around">
+                        <div className="d-flex flex-row">
                             <img src={image}></img>
                             <div>
-                                <p>Feijoada</p>
+                                <p>Marmita - M</p>
                                 <p1>15.50</p1>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div className="d-flex justify-content-around">
+                    </li><li>
+                        <div className="d-flex flex-row">
                             <img src={image}></img>
                             <div>
-                                <p>Feijoada</p>
-                                <p1>15.50</p1>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="d-flex justify-content-around">
-                            <img src={image}></img>
-                            <div>
-                                <p>Feijoada</p>
-                                <p1>15.50</p1>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="d-flex justify-content-around">
-                            <img src={image}></img>
-                            <div>
-                                <p>Feijoada</p>
+                                <p>Marmita - P</p>
                                 <p1>15.50</p1>
                             </div>
                         </div>

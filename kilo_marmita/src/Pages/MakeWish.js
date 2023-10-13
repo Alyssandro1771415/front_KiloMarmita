@@ -3,6 +3,7 @@ import RowRadioButtonsGroup from "../Componentes/RadioButtons/RadioButtons";
 import Cards from "../Componentes/Cards/Cards";
 import CartLateralButton from "../Componentes/CartLateralButton/CartLateralButton";
 
+
 function MakeWish() {
 
     const products = [{ categoria: "pp", nome: "1" }, { categoria: "pp", nome: "2" }, { categoria: "pp", nome: "3" },
@@ -19,7 +20,6 @@ function MakeWish() {
 
             <div className="d-flex">
                 <RowRadioButtonsGroup opt={[["P", "Pequena"], ["M", "Media"], ["G", "Grande"]]}></RowRadioButtonsGroup>
-                
             </div>
 
             <hr></hr>
