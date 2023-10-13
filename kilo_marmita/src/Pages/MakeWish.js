@@ -19,8 +19,10 @@ function MakeWish() {
 
             <div className="d-flex">
                 <RowRadioButtonsGroup opt={[["P", "Pequena"], ["M", "Media"], ["G", "Grande"]]}></RowRadioButtonsGroup>
+                
             </div>
 
+            <hr></hr>
 
             <h2>Pratos Principais</h2>
             <div className="container d-flex flex-wrap justify-content-around mb-5">

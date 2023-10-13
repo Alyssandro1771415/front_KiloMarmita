@@ -72,6 +72,8 @@ function CartLateralButton() {
                 </ul>
                 <h5>Total: R$</h5>
             </div>
+            <hr></hr>
+            <a className="btn btn-success m-2">Concluir Pedido</a>
         </div>
     )
 }
