@@ -1,5 +1,3 @@
-# Gerando o conteúdo do README em formato Markdown
-
 # Kilo Marmita 🍽️
 
 Este projeto é o front-end de um site para o restaurante **Kilo Marmita**. O site fornece informações sobre o restaurante, seu cardápio, localização, horários de funcionamento e permite que os usuários façam pedidos online de forma prática e rápida.
